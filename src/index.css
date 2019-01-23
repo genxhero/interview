@@ -12,3 +12,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.failtext {
+  color: red;
+  text-shadow: 2px 2px;
+}
+
+.fun-div {
+  background: ivory;
+  box-shadow: 2px 2px 1px;
+  border: 1px solid black;
+  width: 150px;
+}
+
+.fun-div:hover{
+  cursor: pointer;
+  background: lightcyan;
+}
+
+.fun-div:focus{
+  background: black;
+  color: ivory;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
