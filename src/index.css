@@ -1,11 +1,16 @@
 body {
   margin: 0;
   padding: 0;
+  height: 800px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root{
+  height: 100%;
 }
 
 code {
@@ -23,14 +28,18 @@ code {
   box-shadow: 2px 2px 1px;
   border: 1px solid black;
   width: 150px;
+  text-align: center;
+-webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
 }
 
-.fun-div:hover{
+.fun-div:hover {
   cursor: pointer;
-  background: lightcyan;
+  background: lightgrey;
 }
 
-.fun-div:focus{
+.fun-div:active {
   background: black;
   color: ivory;
 }
@@ -40,4 +49,42 @@ code {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.column {
+  margin-right: 25px;
+  width: 25%;
+}
+
+#col-a > .column-header {
+  background: #9e6e95;
+  color: white;
+}
+
+#col-b > .column-header {
+background: #39a59c;
+color: white;
+}
+
+#col-c > .column-header {
+  background: #344759;
+  color: white;
+}
+
+#col-d > .column-header {
+  background: #e8741e;
+  color: white;
+}
+
+.board {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-left: 25px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
 }

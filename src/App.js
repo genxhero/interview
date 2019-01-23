@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import DivThingy from './div_thingy';
 import './App.css';
+import Board from './board';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  r
+
   render() {
     return (
       <div className="App">
-            <DivThingy />
+          <Board />
       </div>
     );
   }

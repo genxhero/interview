@@ -7,13 +7,15 @@ class DivThingy extends Component {
         this.state ={
             clicks: 0
         }
-        this.clickCount = this.clickCount.bind(this)
+        this.clickCount = this.clickCount.bind(this);
     }
+
 
     clickCount(){
         this.setState({
             clicks: this.state.clicks + 1
         })
+        this.props.passTheProps(this.state.clicks);
     }
 
   render() {
