@@ -16,6 +16,7 @@ export default class Column extends Component {
       const input = window.prompt("Please enter a task");
       const newCard = input;
       const newCards = this.state.cards;
+      //You can't bloody directly push into this.state.cards, that mutates the state!
       debugger;
       newCards.push(newCard);
       this.setState({
